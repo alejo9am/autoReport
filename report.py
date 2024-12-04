@@ -54,3 +54,5 @@ if __name__ == '__main__':
     save_report(report_data, out_path)
     
     print(f"Report save to: {out_path}\n")
+    
+    import pandas
