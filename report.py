@@ -52,7 +52,3 @@ if __name__ == '__main__':
     
     out_path = 'data/report.html'
     save_report(report_data, out_path)
-    
-    print(f"Report save to: {out_path}\n")
-    
-    import pandas

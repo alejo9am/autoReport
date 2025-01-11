@@ -1,0 +1,84 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+    color: #333;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: #1f4e78;
+  }
+  
+  h1 {
+    margin-top: 20px;
+  }
+  
+  h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  /* Paragraph styling */
+  p {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Table styles */
+  table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #eaf3fa;
+    color: #1f4e78;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  td {
+    background-color: #ffffff;
+    color: #555;
+  }
+  
+  tr:nth-child(even) td {
+    background-color: #f9fbfd;
+  }
+  
+  tr:hover td {
+    background-color: #dff1ff;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    table {
+      width: 100%;
+    }
+  
+    h1, h2 {
+      font-size: 1.25rem;
+    }
+  
+    p {
+      font-size: 0.9rem;
+    }
+  
+    th, td {
+      font-size: 0.85rem;
+    }
+  }  

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+</head>
+<body>
+
+	<!-- button and <input.....> tag to choice file from web page, path: /upload -->
+	
+	<form>
+		<input type="file" name="file" required>
+        <button type="submit">Upload</button>
+	</form>
+
+	{% if tables %}
+		{% for name, table in tables.items() %}
+			
+			{{ name }}
+			{{ table }}
+			
+			<!-- button to create chart with path: /make_chart -->
+			<form action="/make_chart" method="post">
+                <input type="hidden" name="table_name" value="{{ name }}">
+                <button type="submit">Create Chart</button>
+            </form>
+		
+		{% endfor %}
+		
+	{% endif %}
+	
+	{% if img64 and img64.im64 %}
+        <h2>Generated Chart</h2>
+        <!-- Display the generated chart -->
+        <img src="data:image/{{ img64.mime_type }};base64,{{ img64.im64 }}" alt="Generated Chart">
+    {% endif %}
+	
+	<img src="data:image/<mime-type>;base64,{{ img64.im64 }}">
+
+</body>
+</html>

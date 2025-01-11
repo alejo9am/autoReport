@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Data Tables</title>
+	<style>
+		table { width: 100%; border-collapse: collapse; }
+		th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+		th { background-color: #f2f2f2; }
+	</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Report for Alejo Arenas</h1>
+	<p>Date: {{ meta.date }}</p>
+	
+	{% for title, table in tables.items() %}
+		<h2>{{ title }}</h2>
+		{{ table | safe }}
+	{% endfor %}
+</body>
+</html>

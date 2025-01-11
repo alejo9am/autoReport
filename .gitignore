@@ -1,0 +1,7 @@
+/env
+
+# Ignore Git's internal files
+.git/
+*.idx
+*.pack
+*.rev
